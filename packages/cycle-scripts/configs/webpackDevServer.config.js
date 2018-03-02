@@ -88,5 +88,7 @@ module.exports = {
   // Enable HTTPS if the HTTPS environment variable is set to 'true'
   https: protocol === 'https',
   host: host,
+  // disable host check on dev server to allow 0.0.0.0 as host 
+  disableHostCheck: true,
   overlay: false
 }
